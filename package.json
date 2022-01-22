@@ -1,0 +1,38 @@
+{
+  "name": "dogecoin-lunar-calendar",
+  "version": "0.0.1",
+  "description": "Seven planets and three coins, wow!!",
+  "scripts" : {
+    "download-doge": "node lib/download-coin-prices.js DOGE > assets/prices-doge.csv",
+    "download-btc": "node lib/download-coin-prices.js BTC > assets/prices-btc.csv",
+    "download-eth": "node lib/download-coin-prices.js ETH > assets/prices-eth.csv",
+    "publish": "rsync -v -a dist/calendar/* nuc@vpn.rhodey:~/calendar",
+    "create-address": "node lib/coinbase-create-address.js",
+    "address-id-of": "node lib/coinbase-address-id-of.js",
+    "get-receipt": "node lib/coinbase-get-receipt.js",
+    "pdf-month": "mkdir -p dist/calendar && node lib/pdf-month.js",
+    "pdf-year": "mkdir -p dist/calendar && node lib/pdf-year.js",
+    "app-http": "node lib/app-http.js",
+    "copy-dist": "cp -r index.html assets/ dist/",
+    "dist": "browserify index.js -o dist/bundle.js && npm run copy-dist",
+    "watch": "watchify index.js -v -o dist/bundle.js"
+  },
+  "dependencies": {
+    "webdriverio": "^7.16.13",
+    "minimist": "^1.2.0",
+    "split": "^1.0.1",
+    "choo": "^6.13.3",
+    "level": "^7.0.1",
+    "@haileybot/captcha-generator": "^1.7.0",
+    "canvas": "^2.8.0",
+    "pdf-merger-js": "^3.2.1",
+    "astronomy-engine": "^2.0.10",
+    "ephemeris": "^2.0.0",
+    "count-days-in-month": "^1.0.0",
+    "day-of-week": "^1.0.4"
+  },
+  "devDependencies": {
+    "choo-devtools": "^3.0.0"
+  },
+  "keywords": [ ]
+}

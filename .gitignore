@@ -1,0 +1,12 @@
+.env
+lib/download-coin-prices.js
+assets/prices-doge.csv
+assets/prices-btc.csv
+assets/prices-eth.csv
+database/
+dist/
+sync-linode.sh
+sync-nuc.sh
+node_modules/
+package-lock.json
+*\.swp

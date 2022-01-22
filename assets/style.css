@@ -1,0 +1,146 @@
+body {
+  background: #fff;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: Helvetica, sans-serif;
+}
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p, li {
+  font-size: 18px;
+}
+
+body {
+  background-color: #00eeff;
+  background-repeat: repeat-x;
+  font-weight: bold;
+}
+
+body a {
+  color: blue;
+  /*text-decoration: underline;*/
+}
+
+@media only screen and (min-device-width: 1600px) {
+  body {
+    background-image: url("/assets/doge-two.png");
+  }
+
+  body .mobileFrame {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 900px) and (max-device-width: 1599px) {
+  body {
+    background-image: url("/assets/doge-two.png");
+    background-position: -320px 0px;
+  }
+  body .mobileFrame {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 899px) {
+  body {
+    background-image: url("/assets/doge-two.png");
+    background-position: 0px 700px;
+  }
+  body .desktopFrame {
+    display: none;
+  }
+}
+
+.app {
+  width: 900px;
+  margin: 0 auto;
+  padding: 12px 12px 28px 12px;
+}
+
+.homeBox {
+  margin-top: 0px;
+}
+.homeBox p {
+  font-size: 26px;
+}
+.homeBox .wow {
+  font-size: 38px;
+  color: blue;
+}
+.homeBox .cframe {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.faqBox {
+  /* font-family: Georgia, sans-serif; */
+  font-family: Helvetica, sans-serif;
+}
+.faqBox h1 {
+  font-size: 52px;
+  font-family: Georgia, sans-serif;
+}
+.faqBox h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.faqBox p {
+  font-size: 20px;
+}
+.faq2 {
+  margin-left: 70px;
+}
+.faq3 {
+  margin-left: 110px;
+}
+.faq4 {
+  margin-left: 170px;
+}
+
+.solveBox {
+  margin-left: 90px;
+}
+.bookmarkBox {
+  margin-left: 90px;
+}
+
+.coll {
+  text-align: center;
+}
+
+.coll iframe {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.downloads ul {
+  margin-top: 20px;
+}
+
+.downloads ul li {
+  margin-top: 10px;
+}
+
+.coins h2 {
+  font-family: Georgia, sans-serif;
+  text-decoration: underline;
+}
+
+.coins .coin button {
+  margin-bottom: 30px;
+}
+
+.coins .coin .solveButton {
+  margin-left: 5px;
+}
+
+.cliBox {
+  margin-left: 100px;
+}
