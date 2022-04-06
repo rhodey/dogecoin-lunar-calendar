@@ -1,5 +1,5 @@
 # dogecoin-lunar-calendar
-This is the software suite used to create the [Dogecoin Lunar Calendar](https://dogecoincalendar.com) plus source for the website. I have worked to publish this software open source and I hope you can support my work with one [captcha plus $10](https://dogecoincalendar.com/solve). This software well demonstrates how to work programmatically with Coinbase to transact in Dogecoin, Bitcoin, and Ethereum. See also [dogecoin-lunar-investigation](https://github.com/rhodey/dogecoin-lunar-investigation) for such details.
+This is the software suite used to create the [Dogecoin Lunar Calendar](https://dogecoincalendar.com) plus source for the website. I have worked to publish this software open source and I hope you can support my work with one [captcha plus $10 coin](https://dogecoincalendar.com/solve). This software well demonstrates how to work programmatically with Coinbase to transact in Dogecoin, Bitcoin, and Ethereum. See also [dogecoin-lunar-investigation](https://github.com/rhodey/dogecoin-lunar-investigation) for such details.
 
 ## Create PDFs
 Notice that `lib/download-coin-prices.js` is excluded with `.gitignore` plus three CSV files. It may be the case that I have a software to scrape coin prices 'unauthorized' which I have decided against publishing. With these three files out of place price history will be rendered from random.
@@ -31,8 +31,8 @@ $ npm run get-receipt DOGE $addressId
 > $totalUsd, $totalCoin
 ```
 
-## HTTP Server
-These commands plus file `nginx.conf` may be used to develop the website locally.
+## Deploy The Website
+These commands plus file `nginx.conf` may be used to develop the website.
 ```
 $ npm run dist
 $ docker run --name nginx -d \
@@ -41,8 +41,8 @@ $ docker run --name nginx -d \
         --network host nginx
 ```
 
-## App Server
-An application server supports the website by invoking the earlier programs behind a captcha.
+## Deploy The App Server
+The application server invokes `create-address` and `get-receipt` behind native captchas.
 ```
 $ npm run app-http 8081
 ```
