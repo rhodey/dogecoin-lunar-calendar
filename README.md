@@ -25,8 +25,10 @@ Notice that the third program documented works with `addressId`:
 ```
 $ npm run create-address DOGE
 > $dogeAddress, $addressId
+
 $ npm run address-id-of DOGE $dogeAddress
 > $addressId
+
 $ npm run get-receipt DOGE $addressId
 > $totalUsd, $totalCoin
 ```
